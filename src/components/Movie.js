@@ -5,7 +5,7 @@ function Movie({id, coverImg, title, summary, genres}){
     return <div>
       <img src={coverImg} alt=""/>
       <h2>
-        <Link to={`/movie/${id}`}>
+        <Link to={`${process.env.PUBLIC_URL}/movie/${id}`}>
           {title}
         </Link>
       </h2>
